@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Color Vision Mapper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="panel">
+    <header>
+      <div class="mark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div>
+        <h1>Color Vision Mapper</h1>
+        <p class="subtitle">Friend-calibrated color transform</p>
+      </div>
+    </header>
+
+    <label class="toggle-row" for="enabled">
+      <span>
+        <strong>Enable transformation</strong>
+        <small>Applies to the current website</small>
+      </span>
+      <input id="enabled" type="checkbox" checked>
+      <span class="switch" aria-hidden="true"></span>
+    </label>
+
+    <section class="strength-section">
+      <div class="strength-heading">
+        <label for="strength">Intensity</label>
+        <output id="strength-value" for="strength">100%</output>
+      </div>
+      <input id="strength" type="range" min="0" max="100" step="5" value="100">
+      <div class="range-labels"><span>Original colors</span><span>Full transform</span></div>
+    </section>
+
+    <p id="status" class="status" role="status">Ready</p>
+    <footer>
+      Based on the six color pairs you supplied. This is an approximation, not a medical color-blindness simulation.
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
