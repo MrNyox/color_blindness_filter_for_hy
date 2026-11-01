@@ -14,7 +14,7 @@
       </div>
       <div>
         <h1>Color Vision Mapper</h1>
-        <p class="subtitle">Friend-calibrated color transform</p>
+        <p class="subtitle">Hardware-accelerated color transform</p>
       </div>
     </header>
 
@@ -27,6 +27,17 @@
       <span class="switch" aria-hidden="true"></span>
     </label>
 
+    <section class="type-section">
+      <label for="type">Filter Type</label>
+      <select id="type">
+        <option value="deuteranopia">Deuteranopia (Green-Blind)</option>
+        <option value="protanopia">Protanopia (Red-Blind)</option>
+        <option value="tritanopia">Tritanopia (Blue-Blind)</option>
+        <option value="achromatopsia">Achromatopsia (Monochrome)</option>
+        <option value="custom">Custom (Friend-calibrated)</option>
+      </select>
+    </section>
+
     <section class="strength-section">
       <div class="strength-heading">
         <label for="strength">Intensity</label>
@@ -38,7 +49,7 @@
 
     <p id="status" class="status" role="status">Ready</p>
     <footer>
-      Based on the six color pairs you supplied. This is an approximation, not a medical color-blindness simulation.
+      Single-matrix SVG filter for maximum performance.
     </footer>
   </main>
   <script src="popup.js"></script>

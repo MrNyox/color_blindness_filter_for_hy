@@ -62,7 +62,6 @@ h1 {
   cursor: pointer;
   position: relative;
 }
-
 .toggle-row strong, .toggle-row small { display: block; }
 .toggle-row strong { font-size: 13px; font-weight: 600; }
 .toggle-row small { margin-top: 4px; font-size: 11px; color: #9ca3af; }
@@ -92,10 +91,26 @@ h1 {
 .toggle-row input:checked + .switch::after { transform: translateX(17px); }
 .toggle-row input:focus-visible + .switch { outline: 2px solid #a5b9ff; outline-offset: 3px; }
 
+.type-section { padding: 17px 0 6px; border-bottom: 1px solid #292d37; }
+.type-section label { font-size: 12px; font-weight: 600; display: block; margin-bottom: 8px; }
+.type-section select {
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #3f4555;
+  background: #252936;
+  color: #f3f4f6;
+  font-size: 12px;
+  outline: none;
+  cursor: pointer;
+}
+.type-section select:focus { border-color: #7894f5; }
+
 .strength-section { padding: 17px 0 6px; }
 .strength-heading { display: flex; align-items: center; justify-content: space-between; }
 .strength-heading label { font-size: 12px; font-weight: 600; }
 .strength-heading output { color: #c7d2fe; font-size: 12px; font-variant-numeric: tabular-nums; }
+
 input[type="range"] { width: 100%; margin: 14px 0 5px; accent-color: #7894f5; cursor: pointer; }
 .range-labels { display: flex; justify-content: space-between; color: #8c93a2; font-size: 10px; }
 
