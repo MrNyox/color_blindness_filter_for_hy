@@ -1,5 +1,5 @@
 (()=>{
-  const DEFAULTS = {enabled: true, strength: 100, type: "deuteranopia"};
+  const DEFAULTS = {enabled: true, strength: 100, type: "custom"};
 
   const enabledInput = document.getElementById("enabled");
   const strengthInput = document.getElementById("strength");

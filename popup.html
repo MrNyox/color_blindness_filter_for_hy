@@ -30,11 +30,11 @@
     <section class="type-section">
       <label for="type">Filter Type</label>
       <select id="type">
-        <option value="deuteranopia">Deuteranopia (Green-Blind)</option>
-        <option value="protanopia">Protanopia (Red-Blind)</option>
-        <option value="tritanopia">Tritanopia (Blue-Blind)</option>
-        <option value="achromatopsia">Achromatopsia (Monochrome)</option>
-        <option value="custom">Custom (Friend-calibrated)</option>
+        <option value="custom">Friend-calibrated (red-based, selective)</option>
+        <option value="deuteranopia">Simulate: Deuteranopia</option>
+        <option value="protanopia">Simulate: Protanopia</option>
+        <option value="tritanopia">Simulate: Tritanopia</option>
+        <option value="achromatopsia">Simulate: Achromatopsia</option>
       </select>
     </section>
 
@@ -49,7 +49,7 @@
 
     <p id="status" class="status" role="status">Ready</p>
     <footer>
-      Single-matrix SVG filter for maximum performance.
+      Selective one-way mapping: greens, blues and neutrals stay untouched.
     </footer>
   </main>
   <script src="popup.js"></script>
